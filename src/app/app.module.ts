@@ -7,6 +7,8 @@ import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
 import {SigninComponent} from './signin/signin.component';
 import {FormsModule} from '@angular/forms';
+import {PasswordModule} from 'primeng/password';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import {FormsModule} from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     InputTextModule,
     ButtonModule,
-    FormsModule
+    FormsModule,
+    PasswordModule
   ],
   providers: [],
   bootstrap: [AppComponent]

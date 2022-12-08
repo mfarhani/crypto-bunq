@@ -5,11 +5,12 @@
       <label for="full-name">Full name</label>
     </div>
     <div class="p-float-label">
-      <input id="email" [(ngModel)]="user.email" type="text" pInputText/>
+      <input id="email" [(ngModel)]="user.email" type="email" name="email"
+             pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" email pInputText/>
       <label for="email">Email</label>
     </div>
     <div class="p-float-label">
-      <input id="password" [(ngModel)]="user.password" type="text" pInputText/>
+      <p-password id="password" [(ngModel)]="user.password"></p-password>
       <label for="password">Password</label>
     </div>
   </div>
