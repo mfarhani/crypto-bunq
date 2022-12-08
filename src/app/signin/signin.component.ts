@@ -11,6 +11,10 @@ export class SigninComponent {
   public user: IUser = new User();
 
   onSubmit(): void {
-    console.log(this.user);
+    if (this.user.email === 'user@company.com' && this.user.password === 'Password1!') {
+      console.log('Signed In Successfully');
+    } else {
+      console.error('The email or password you entered is incorrect.');
+    }
   }
 }
