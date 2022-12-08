@@ -1,0 +1,17 @@
+<div class="login-form">
+  <div class="input-group">
+    <div class="p-float-label">
+      <input id="full-name" [(ngModel)]="user.fullName" type="text" pInputText/>
+      <label for="full-name">Full name</label>
+    </div>
+    <div class="p-float-label">
+      <input id="email" [(ngModel)]="user.email" type="text" pInputText/>
+      <label for="email">Email</label>
+    </div>
+    <div class="p-float-label">
+      <input id="password" [(ngModel)]="user.password" type="text" pInputText/>
+      <label for="password">Password</label>
+    </div>
+  </div>
+  <button pButton type="button" (click)="onSubmit()" label="Submit" class="submit-btn"></button>
+</div>
