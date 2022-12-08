@@ -20,6 +20,8 @@ export class SigninComponent {
       this.messageService.add({severity: 'success', summary: 'You have successfully signed in'});
     } else {
       this.messageService.add({severity: 'error', summary: 'The email or password you entered is incorrect'});
+      localStorage.setItem('fullName', this.user.fullName as string);
+      localStorage.setItem('email', this.user.email as string);
     }
   }
 }
