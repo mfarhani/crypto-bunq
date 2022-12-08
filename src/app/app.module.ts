@@ -9,6 +9,7 @@ import {SigninComponent} from './signin/signin.component';
 import {FormsModule} from '@angular/forms';
 import {PasswordModule} from 'primeng/password';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ToastModule} from 'primeng/toast';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    ToastModule,
     InputTextModule,
     ButtonModule,
     FormsModule,
